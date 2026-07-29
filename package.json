@@ -2,7 +2,7 @@
   "name": "awesome-owasp-security-testing",
   "private": true,
   "description": "A curated list of OWASP projects, standards, and companion tools for application security testing.",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "scripts": {
     "test": "remark --frail --quiet ."
   },
