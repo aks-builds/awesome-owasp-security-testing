@@ -142,23 +142,32 @@ Companion coverage here is thin on purpose: most threat-modeling tooling already
 #### SAST
 
 - [Bandit](https://github.com/PyCQA/bandit) — Security linter for Python code.
+- [Bearer](https://github.com/Bearer/bearer) — Static analysis scanner that discovers and prioritizes security and data-privacy risks in application source code.
 - [Brakeman](https://github.com/presidentbeef/brakeman) — Static analysis security scanner for Ruby on Rails.
 - [CodeQL](https://github.com/github/codeql) — Semantic code analysis engine from GitHub; treats code as data you can query.
+- [Find Security Bugs](https://github.com/find-sec-bugs/find-sec-bugs) — SpotBugs plugin for security audits of Java, Kotlin, Groovy, and Scala applications.
 - [gosec](https://github.com/securego/gosec) — Inspects Go source code for security problems by AST analysis.
+- [Horusec](https://github.com/ZupIT/horusec) — Static analysis tool that scans projects across multiple languages for vulnerabilities from a single command.
 - [njsscan](https://github.com/ajinabraham/njsscan) — Static security scanner for Node.js applications powered by libsast and semgrep.
 - [Semgrep](https://github.com/semgrep/semgrep) — Lightweight static analysis for many languages, driven by pattern rules; strong AppSec rule packs.
+- [SonarQube Community Edition](https://github.com/SonarSource/sonarqube) — Self-hosted static analysis platform for code quality and security issues across 30+ languages.
 
 #### Secret Scanning
 
+- [2ms (Too Many Secrets)](https://github.com/checkmarx/2ms) — Secret scanner for files, git history, and collaboration platforms such as Confluence, Slack, and Discord.
 - [detect-secrets](https://github.com/Yelp/detect-secrets) — Pre-commit-friendly secrets scanner from Yelp with baseline-based suppression.
+- [ggshield](https://github.com/GitGuardian/ggshield) — CLI from GitGuardian for detecting and validating hardcoded secrets in code, pre-commit hooks, and CI pipelines.
 - [Gitleaks](https://github.com/gitleaks/gitleaks) — SAST tool for detecting hardcoded secrets like passwords, API keys, and tokens in git repos.
+- [Talisman](https://github.com/thoughtworks/talisman) — Pre-commit and pre-push hook that scans outgoing changesets for secrets such as tokens, passwords, and private keys.
 - [TruffleHog](https://github.com/trufflesecurity/trufflehog) — Finds and verifies leaked credentials by scanning repos, S3, and other sources.
 
 ### Build
 
 #### SCA and SBOM
 
+- [cdxgen](https://github.com/cdxgen/cdxgen) — CycloneDX SBOM generator for source code and container images across many languages and package managers.
 - [Grype](https://github.com/anchore/grype) — Vulnerability scanner for container images and filesystems.
+- [OSS Review Toolkit (ORT)](https://github.com/oss-review-toolkit/ort) — Toolkit that analyzes dependency trees, performs license and vulnerability scanning, and generates SBOMs in CycloneDX and SPDX formats.
 - [OSV-Scanner](https://github.com/google/osv-scanner) — Frontend to the OSV.dev database; scans lockfiles and SBOMs for known vulnerabilities.
 - [Snyk Open Source CLI](https://github.com/snyk/cli) — Commercial SCA tool with a free tier; covers many ecosystems.
 - [Syft](https://github.com/anchore/syft) — SBOM generator for container images and filesystems; output to CycloneDX, SPDX, and others.
@@ -166,8 +175,10 @@ Companion coverage here is thin on purpose: most threat-modeling tooling already
 
 #### Infrastructure as Code Scanning
 
+- [cdk-nag](https://github.com/cdklabs/cdk-nag) — Checks AWS CDK applications at synthesis time against rule packs (AWS Solutions, HIPAA, NIST 800-53, PCI-DSS) to flag insecure infrastructure definitions before deployment.
 - [Checkov](https://github.com/bridgecrewio/checkov) — Static analysis for Terraform, CloudFormation, Kubernetes, Helm, ARM, and more.
 - [KICS](https://github.com/Checkmarx/kics) — Find security vulnerabilities, compliance issues, and IaC misconfigurations across many IaC platforms.
+- [terraform-compliance](https://github.com/terraform-compliance/cli) — BDD-style test framework that checks Terraform plans against user-defined security and compliance rules.
 - [Terrascan](https://github.com/tenable/terrascan) — IaC scanner that detects compliance and security violations.
 - [tfsec](https://github.com/aquasecurity/tfsec) — Security scanner for Terraform code (now part of the Trivy project).
 
@@ -177,7 +188,9 @@ Companion coverage here is thin on purpose: most threat-modeling tooling already
 
 - [Burp Suite](https://portswigger.net/burp) — Industry-standard web vulnerability scanner and intercepting proxy by PortSwigger; Community Edition is free.
 - [Commix](https://github.com/commixproject/commix) — Automated tool for detecting and exploiting OS command injection vulnerabilities in web applications.
+- [Dalfox](https://github.com/hahwul/dalfox) — Go-based scanner that crawls and probes live web applications for XSS and related parameter-injection vulnerabilities, built for CI automation.
 - [Darkmoon](https://github.com/ASCIT31/Dark-Moon) — Open source (GPL-3.0) autonomous AI penetration testing platform covering web, API, Active Directory, and Kubernetes, orchestrating offensive tools as an MCP host with proof of exploitation and a local privacy gateway.
+- [Jaeles](https://github.com/jaeles-project/jaeles) — Signature-based web application scanning framework that executes customizable YAML detection rules at scale.
 - [Nikto](https://github.com/sullo/nikto) — Long-running open-source web server scanner that tests for outdated software and common misconfigurations.
 - [Nuclei](https://github.com/projectdiscovery/nuclei) — Fast, template-based vulnerability scanner driven by a large community template library.
 - [OWTF](https://github.com/owtf/owtf) — Offensive Web Testing Framework that unifies many pentesting tools into a semi-automated workflow aligned with the OWASP Testing Guide.
@@ -188,24 +201,33 @@ Companion coverage here is thin on purpose: most threat-modeling tooling already
 #### Fuzzing
 
 - [AFL++](https://github.com/AFLplusplus/AFLplusplus) — Community-maintained successor to AFL with modern instrumentation, coverage-guided fuzzing, and QEMU/Unicorn modes.
+- [boofuzz](https://github.com/jtpereyda/boofuzz) — Python framework for building network protocol fuzzers, forked and extended from the Sulley fuzzing framework.
+- [ffuf](https://github.com/ffuf/ffuf) — Command-line web fuzzer used for content, parameter, and virtual-host discovery via wordlist-driven HTTP requests.
 - [Jazzer](https://github.com/CodeIntelligenceTesting/jazzer) — Coverage-guided, in-process fuzzer for the JVM, commonly used to fuzz Java and Kotlin code.
+- [LibAFL](https://github.com/AFLplusplus/LibAFL) — Modular Rust library for composing custom coverage-guided fuzzers from reusable components.
 - [OSS-Fuzz](https://github.com/google/oss-fuzz) — Google's continuous fuzzing infrastructure for critical open-source projects, integrating with AFL++, libFuzzer, and Honggfuzz.
+- [Syzkaller](https://github.com/google/syzkaller) — Coverage-guided kernel fuzzer that generates and mutates syscall sequences to uncover OS kernel bugs.
 
 #### API Security
 
 - [Akto](https://github.com/akto-api-security/akto) — Open-source API security testing platform with traffic-aware test generation.
+- [InQL](https://github.com/doyensec/inql) — GraphQL-focused security testing tool (Burp Suite extension and standalone CLI) that introspects schemas and probes for authorization, injection, and denial-of-service flaws.
 - [Insomnia](https://github.com/Kong/insomnia) — Open-source API client useful for manual API exploration alongside automated scans.
 - [Postman / Newman](https://github.com/postmanlabs/newman) — Command-line collection runner for Postman; useful for embedding API security checks into CI.
+- [RESTler](https://github.com/microsoft/restler-fuzzer) — Stateful REST API fuzzer that infers request sequences from an OpenAPI spec to uncover security and reliability bugs.
 - [Schemathesis](https://github.com/schemathesis/schemathesis) — Property-based testing for OpenAPI, GraphQL, and other API schemas; finds bugs the spec implies must not exist.
+- [vacuum](https://github.com/daveshanley/vacuum) — High-speed OpenAPI/AsyncAPI/JSON Schema linter with a built-in OWASP API Security Top 10 ruleset.
 
 ### Release and Deploy
 
 #### CI/CD and Supply Chain Security
 
 - [cosign (Sigstore)](https://github.com/sigstore/cosign) — Container and binary signing, verification, and transparency-log tooling from the Sigstore project.
+- [GUAC](https://github.com/guacsec/guac) — Aggregates SBOMs, attestations, and vulnerability data into a graph database to map and query software supply-chain relationships.
 - [in-toto](https://github.com/in-toto/in-toto) — Framework for cryptographically attesting to and verifying each step of a software supply chain.
 - [OpenSSF Scorecard](https://github.com/ossf/scorecard) — Automated checks that score open-source projects on security best practices (branch protection, pinned dependencies, fuzzing, etc.).
 - [SLSA (Supply-chain Levels for Software Artifacts)](https://slsa.dev) — Framework with graduated compliance levels for preventing tampering and securing the software supply chain.
+- [zizmor](https://github.com/woodruffw/zizmor) — Static analysis tool for GitHub Actions, Dependabot, and pre-commit configs that flags injection flaws and credential-leak risks in CI/CD pipeline definitions.
 
 ### Operate and Monitor
 
@@ -217,12 +239,16 @@ Companion coverage here is thin on purpose: most threat-modeling tooling already
 - [kube-bench](https://github.com/aquasecurity/kube-bench) — Checks whether Kubernetes is deployed securely per the CIS Kubernetes Benchmark.
 - [kube-hunter](https://github.com/aquasecurity/kube-hunter) — Hunts for security weaknesses in Kubernetes clusters.
 - [kube-linter](https://github.com/stackrox/kube-linter) — Static analysis tool that checks Kubernetes YAML and Helm charts against security and configuration best practices.
+- [KubeArmor](https://github.com/kubearmor/KubeArmor) — Runtime security enforcement engine that uses Linux Security Modules (AppArmor/BPF-LSM) to restrict process execution, file access, and network behavior in containers and hosts.
 - [Kubescape](https://github.com/kubescape/kubescape) — Open-source Kubernetes security platform covering misconfiguration, compliance, and vulnerability scanning across the pipeline and runtime.
+- [Kyverno](https://github.com/kyverno/kyverno) — Kubernetes-native policy engine that validates, mutates, and generates cluster resources as admission-time policy-as-code.
 - [Popeye](https://github.com/derailed/popeye) — Kubernetes cluster sanitizer that scans live clusters for misconfigurations and resources that deviate from best practices.
 
 #### Cloud Security
 
 - [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian) — Rules engine for enforcing security, cost, and governance policies across AWS, Azure, and GCP via a YAML DSL.
+- [CloudFox](https://github.com/BishopFox/cloudfox) — Command-line situational-awareness tool that enumerates AWS/Azure/GCP environments to surface exploitable attack paths for penetration testers.
+- [Cloudsplaining](https://github.com/salesforce/cloudsplaining) — AWS IAM security-assessment tool that parses account policies to flag violations of least privilege and produces a risk-prioritized report.
 - [Prowler](https://github.com/prowler-cloud/prowler) — Open-source cloud security and compliance tool covering AWS, Azure, GCP, and Kubernetes with hundreds of built-in checks.
 - [ScoutSuite](https://github.com/nccgroup/ScoutSuite) — Multi-cloud security auditing tool that assesses AWS, Azure, GCP, and other providers' configurations.
 
@@ -233,24 +259,32 @@ Tooling built around an engagement, not a pipeline stage — recon, cracking, em
 ### Reconnaissance
 
 - [httpx](https://github.com/projectdiscovery/httpx) — Fast, multi-purpose HTTP toolkit that probes hosts and pulls metadata at scale.
+- [Katana](https://github.com/projectdiscovery/katana) — Crawling and spidering framework that discovers endpoints, forms, and JavaScript-embedded URLs to map a target's attack surface.
 - [Metasploit Framework](https://github.com/rapid7/metasploit-framework) — World's most-used penetration testing framework, with thousands of exploits and auxiliary modules.
 - [Nmap](https://nmap.org) — De facto standard network scanner for host discovery and service/version detection.
 - [Subfinder](https://github.com/projectdiscovery/subfinder) — Fast passive subdomain enumeration tool.
+- [theHarvester](https://github.com/laramies/theHarvester) — OSINT tool that gathers emails, subdomains, hosts, and employee names from public sources such as search engines and key servers.
 
 ### Password and Credential Testing
 
 - [hashcat](https://github.com/hashcat/hashcat) — World's fastest and most advanced open-source password recovery and auditing tool with GPU acceleration.
+- [Hydra (thc-hydra)](https://github.com/vanhauser-thc/thc-hydra) — Parallelized network login cracker supporting numerous protocols for testing authentication mechanisms.
 - [John the Ripper](https://github.com/openwall/john) — Long-standing offline password cracker supporting hundreds of hash and cipher types.
+- [NetExec](https://github.com/Pennyw0rth/NetExec) — Network service exploitation tool for enumerating and attacking Active Directory and other network protocols; the continuation of CrackMapExec.
 
 ### Adversary Emulation and Purple Teaming
 
 - [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) — Library of small, portable tests mapped directly to MITRE ATT&CK techniques for validating detections.
 - [Caldera](https://github.com/apache/caldera) — Automated adversary emulation platform, originally developed by MITRE and now under the Apache Software Foundation.
+- [Sliver](https://github.com/BishopFox/sliver) — Cross-platform adversary emulation and command-and-control framework supporting multiple communication protocols for red team implants.
+- [Stratus Red Team](https://github.com/DataDog/stratus-red-team) — Command-line tool that executes granular, self-contained attack techniques against cloud environments to test detection and response.
 
 ### Mobile Security
 
 - [APKLeaks](https://github.com/dwisiswant0/apkleaks) — Scan APK files for URIs, endpoints, and secrets.
+- [Apktool](https://github.com/iBotPeaches/Apktool) — Tool for reverse engineering Android APK files to decode resources and disassemble bytecode, and to rebuild them after modification.
 - [Frida](https://github.com/frida/frida) — Dynamic instrumentation toolkit for developers, reverse engineers, and security researchers.
+- [JADX](https://github.com/skylot/jadx) — Command-line and GUI tool that decompiles Android DEX and APK files into readable Java source code.
 - [MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF) — Mobile Security Framework for automated, all-in-one mobile app pentesting (Android/iOS/Windows) — SAST, DAST, and API testing.
 - [Objection](https://github.com/sensepost/objection) — Runtime mobile exploration toolkit powered by Frida.
 
@@ -258,7 +292,9 @@ Tooling built around an engagement, not a pipeline stage — recon, cracking, em
 
 - [DeepTeam](https://github.com/confident-ai/deepteam) — Open-source framework for red-teaming LLM applications and agents against common attack vectors.
 - [garak](https://github.com/NVIDIA/garak) — LLM vulnerability scanner (maintained by NVIDIA) that probes models for prompt injection, hallucination, jailbreaks, and data leakage.
+- [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) — Toolkit for adding programmable guardrails to LLM-based conversational systems to control input, output, and dialogue behavior.
 - [promptfoo](https://github.com/promptfoo/promptfoo) — Open-source LLM testing and red-teaming tool for evaluating prompts, agents, and RAG pipelines in CI/CD.
+- [PyRIT](https://github.com/Azure/PyRIT) — Open source framework for orchestrating automated red-teaming of generative AI systems to identify risks.
 
 ## Standards and Frameworks (non-OWASP)
 
