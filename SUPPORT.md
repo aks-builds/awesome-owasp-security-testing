@@ -1,4 +1,4 @@
 # Support
 
 - **Bugs & feature requests:** [Open a GitHub Issue](https://github.com/aks-builds/awesome-owasp-security-testing/issues)
-- **Private inquiries:** its.aks@outlook.com
+- **Private inquiries:** <its.aks@outlook.com>

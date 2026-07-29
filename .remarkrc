@@ -1,5 +1,7 @@
 {
   "plugins": [
+    "remark-frontmatter",
+    "remark-gfm",
     "remark-preset-lint-consistent",
     "remark-preset-lint-recommended"
   ]
