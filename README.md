@@ -100,6 +100,7 @@ Tools outside the OWASP umbrella that integrate cleanly with OWASP standards and
 - [Nuclei](https://github.com/projectdiscovery/nuclei) — Fast, template-based vulnerability scanner driven by a large community template library.
 - [Nikto](https://github.com/sullo/nikto) — Long-running open-source web server scanner that tests for outdated software and common misconfigurations.
 - [sqlmap](https://github.com/sqlmapproject/sqlmap) — Automatic SQL injection detection and exploitation tool.
+- [Darkmoon](https://github.com/ASCIT31/Dark-Moon) - Open source (GPL-3.0) autonomous AI penetration testing platform covering web, API, Active Directory and Kubernetes, orchestrating offensive tools as an MCP host with proof of exploitation and a local privacy gateway.
 - [Wapiti](https://github.com/wapiti-scanner/wapiti) — Web application vulnerability scanner that fuzzes scripts and forms for common injection flaws.
 
 ### SAST
