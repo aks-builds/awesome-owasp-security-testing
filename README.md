@@ -158,6 +158,7 @@ Companion coverage here is thin on purpose: most threat-modeling tooling already
 - [detect-secrets](https://github.com/Yelp/detect-secrets) - Pre-commit-friendly secrets scanner from Yelp with baseline-based suppression.
 - [ggshield](https://github.com/GitGuardian/ggshield) - CLI from GitGuardian for detecting and validating hardcoded secrets in code, pre-commit hooks, and CI pipelines.
 - [Gitleaks](https://github.com/gitleaks/gitleaks) - SAST tool for detecting hardcoded secrets like passwords, API keys, and tokens in git repos.
+- [KeyDrift](https://keydrift.dev) - Scans deployed HTML and JavaScript for exposed secrets while recognizing public browser credentials that should not be treated as leaks.
 - [Talisman](https://github.com/thoughtworks/talisman) - Pre-commit and pre-push hook that scans outgoing changesets for secrets such as tokens, passwords, and private keys.
 - [TruffleHog](https://github.com/trufflesecurity/trufflehog) - Finds and verifies leaked credentials by scanning repos, S3, and other sources.
 
