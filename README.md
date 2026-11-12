@@ -226,6 +226,7 @@ Companion coverage here is thin on purpose: most threat-modeling tooling already
 - [cosign (Sigstore)](https://github.com/sigstore/cosign) - Container and binary signing, verification, and transparency-log tooling from the Sigstore project.
 - [GUAC](https://github.com/guacsec/guac) - Aggregates SBOMs, attestations, and vulnerability data into a graph database to map and query software supply-chain relationships.
 - [in-toto](https://github.com/in-toto/in-toto) - Framework for cryptographically attesting to and verifying each step of a software supply chain.
+- [npm-install-audit](https://github.com/cryptostrapon/npm-install-audit) - Zero-dependency CLI that inspects an untrusted Node.js project before the first install for install hooks, git hooks, risky project .npmrc settings, yarnPath, .pnpmfile.cjs and dependencies that bypass the npm registry.
 - [OpenSSF Scorecard](https://github.com/ossf/scorecard) - Automated checks that score open-source projects on security best practices (branch protection, pinned dependencies, fuzzing, etc.).
 - [SLSA (Supply-chain Levels for Software Artifacts)](https://slsa.dev) - Framework with graduated compliance levels for preventing tampering and securing the software supply chain.
 - [zizmor](https://github.com/woodruffw/zizmor) - Static analysis tool for GitHub Actions, Dependabot, and pre-commit configs that flags injection flaws and credential-leak risks in CI/CD pipeline definitions.
