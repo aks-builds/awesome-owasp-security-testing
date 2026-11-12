@@ -250,6 +250,7 @@ Companion coverage here is thin on purpose: most threat-modeling tooling already
 - [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian) - Rules engine for enforcing security, cost, and governance policies across AWS, Azure, and GCP via a YAML DSL.
 - [CloudFox](https://github.com/BishopFox/cloudfox) - Command-line situational-awareness tool that enumerates AWS/Azure/GCP environments to surface exploitable attack paths for penetration testers.
 - [Cloudsplaining](https://github.com/salesforce/cloudsplaining) - AWS IAM security-assessment tool that parses account policies to flag violations of least privilege and produces a risk-prioritized report.
+- [Madsalt Supabase Checker](https://madsalt.tech/tools/supabase-security-check/) - Free read-only scanner for Supabase projects that checks RLS, grants, database functions, auth settings and storage buckets against 46 rules mapped to OWASP Top 10:2025, with fix SQL for each finding.
 - [Prowler](https://github.com/prowler-cloud/prowler) - Open-source cloud security and compliance tool covering AWS, Azure, GCP, and Kubernetes with hundreds of built-in checks.
 - [ScoutSuite](https://github.com/nccgroup/ScoutSuite) - Multi-cloud security auditing tool that assesses AWS, Azure, GCP, and other providers' configurations.
 
